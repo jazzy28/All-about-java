@@ -1,5 +1,6 @@
 import java.util.*;
 //scn is a variable of type Scanner, that takes input from user
+//import java.util.Scanner; - actual library for input
 public class Input{
      public static void main(String[] args){
      //Integer
