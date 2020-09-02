@@ -9,8 +9,8 @@ public class manualTypeCasting{
         // System.out.println(y);
         double myDouble = 2.82;
         int myInt = (int)myDouble; //manual
-        System.out.println(myDouble);
-         System.out.println(myInt);
+        System.out.println(myDouble); //2.82
+         System.out.println(myInt); //2- floor value will be printed
         
      }
 }
