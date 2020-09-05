@@ -4,7 +4,7 @@ public class Main
     {
        //printing element instead of index
        int[] nums = {3,4,56,78,90,2};
-       for(int num: nums){
+       for(int num: nums){ //for each loop
            System.out.println(num);
        }
     }
