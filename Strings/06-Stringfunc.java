@@ -15,5 +15,12 @@ public class Main{
         System.out.println(name.length());//length
         System.out.println(" ".isEmpty());//empty string or not, if there space between "", it is not empty, considering space character
         System.out.println("    ".isBlank()); //its blank
+          
+        //lower and upper case
+        String str = "Hello World !!";
+ 
+        System.out.println(str.toUpperCase()); 
+        System.out.println(str.toLowerCase()); 
+ 
      }
 }
