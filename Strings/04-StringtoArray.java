@@ -6,5 +6,8 @@ public class Main{
         String person = "Jasmine";
         char[] arr = person.toCharArray();//returns character array
         System.out.println(Arrays.toString(arr)); 
+        //arrays are mutable
+        arr[0] = 'K';
+        System.out.println(Arrays.toString(arr)); 
      }
 }
