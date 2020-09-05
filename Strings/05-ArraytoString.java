@@ -8,11 +8,5 @@ public class Main{
         String name = String.valueOf(arr);
         System.out.println(name);
         System.out.println(person);
-        
-        //Substring
-        System.out.println(name.substring(1));
-        System.out.println(name.substring(2, 7));//start index, end-1
-        System.out.println(name.length());//length
-        System.out.println(" ".isEmpty());//empty string or not, if there space between "", it is not empty, considering space character
-     }
+       }
 }
