@@ -10,7 +10,7 @@ public class Main{
     }
     
     private static void eqSum(ArrayList<Integer> first, ArrayList<Integer> second, int fsum, int ssum, int[] nums, int index){
-        if(index == nums.length){
+        if(index == nums.length){//base case
             if(fsum == ssum){
                 System.out.println(first + " : " + second); //base case
             }
