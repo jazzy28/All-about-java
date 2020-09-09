@@ -20,10 +20,10 @@ public class Main{
         
         first.add(item);
         eqSum(first, second, fsum: fsum+item, ssum, nums, index:index+1);
-        first.remove(first.size()-1);
+        first.remove(index:first.size()-1);
         
         second.add(item);
         eqSum(first, second, fsum, ssum: ssum+item, nums, index:index+1);
-        second.remove(first.size()-1);
+        second.remove(index:second.size()-1);
     }
 }
