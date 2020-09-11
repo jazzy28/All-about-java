@@ -26,7 +26,7 @@ public class Main{
         
         proc.append(ch); //adding to proc, same object
         subseq(proc, unproc);
-        proc.delete(proc.length()-1, proc.length());
+        proc.delete(proc.length()-1, proc.length()); //backtracking, coming back to the. upper node
         
         subseq(proc, unproc);
         unproc.insert(0, ch);
