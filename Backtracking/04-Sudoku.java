@@ -60,8 +60,8 @@ public class Main{
         int rowChunk = row/3; 
         int colChunk = col/3;
         
-        for(int r = rowChunk*3; r<(rowChunk+1)*3; r++){
-            for(int c = colChunk*3; c<(colChunk+1)*3; c++){
+        for(int r = rowChunk*3; r<(rowChunk+1)*3; r++){ //0, 3, 6
+            for(int c = colChunk*3; c<(colChunk+1)*3; c++){ //3, 6, 9
                 if(board[r][c] == value){
                     return false;
                 }
