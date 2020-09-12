@@ -20,16 +20,17 @@ public class Main{
     }
     public static void sudoku(int[][] board, int row, int col){
         if(row == 9){ //end of row
-            for(int i = 0; i<9; i++){
+            for(int i = 0; i<9; i++){//print your board
                System.out.println(Arrays.toString(board[i]));
             }
             return;
-        }
+        }//complete current row, go to next row
         if(col == 9){
             sudoku(board, row + 1, 0); //this means that, last col has ended, there will be fresh start, col = 0, row+1
             return;
         }
         
+        //if current item is blank
         if(board[row][col] == 0){//neither row nor col has ended
         //processing or backtracking
             for(int i = 0; i<=9; i++){ //trying all the values from 1 to 9
@@ -39,7 +40,7 @@ public class Main{
                     board[row][col] = 0; //backtrack
                 }
             }
-        } else{
+        } else{ //current value is not blank
             sudoku(board, row, col + 1);//col is full
         }
     }
@@ -55,8 +56,8 @@ public class Main{
             }
         }
         
-        //check box
-        int rowChunk = row/3;
+        //check box: MAIN CODE
+        int rowChunk = row/3; 
         int colChunk = col/3;
         
         for(int r = rowChunk*3; r<(rowChunk+1)*3; r++){
