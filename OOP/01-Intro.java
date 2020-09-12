@@ -4,6 +4,7 @@ import java.util.*;
 protected class Hostler{
     public static void main(String[] args){
         
+        static int population = 0;
         int money = 1000;
         
         public void part(){
