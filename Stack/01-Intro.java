@@ -4,7 +4,7 @@
 public class StackClient //don't name Stack as the class name, already exists
 {
 	public static void main(String[] args) {
-	    Stack<Integer> stack = new Stack(); //stack of integer type
+	    Stack<Integer> stack = new Stack<>(); //stack of integer type
 	    
 	    //add elements
         stack.push(2);
