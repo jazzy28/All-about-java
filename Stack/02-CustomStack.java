@@ -60,7 +60,7 @@ public class CustomStack
 	            System.out.println("Stack is empty");
 	            return null;
 	    }
-	    return this.data[top];
+	    return this.data[top]; //return top most element
 	    
 	}
 }
