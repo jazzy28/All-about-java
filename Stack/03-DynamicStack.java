@@ -1,4 +1,4 @@
-//size will  not be fixed, like Array
+//size will not be fixed, like Array
 //using inheritance to inherit desired state behavior
 //modifying push operation, as it was of fixed size in array
 
