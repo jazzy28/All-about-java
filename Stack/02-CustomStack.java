@@ -3,6 +3,7 @@
 
 //STACK USING ARRAY
 
+//CustomStack.java
 import java.util.*; 
 
 public class CustomStack 
@@ -61,6 +62,25 @@ public class CustomStack
 	    }
 	    return this.data[top];
 	    
+	}
+}
+
+	//StackClient.java
+public class StackClient //don't name Stack as the class name, already exists
+{
+	public static void main(String[] args) {
+	    CustomStack stack = new CustomStack();
+	
+	//add elements
+        stack.push(2);
+        stack.push(4);
+        stack.push(19);
+        stack.push(6);
+        
+        //to remove top-most element
+		System.out.println(stack.pop()); //6 will get removed first
+		
+		System.out.println(stack.empty()); //false
 	}
 }
 
