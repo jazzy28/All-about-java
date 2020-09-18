@@ -64,7 +64,6 @@ public class QueueClient
 	    queue.add(4);
 	    
 	    System.out.println(queue.remove());//1
-	    System.out.println(queue.remove());//2
 	    
 		
 	}
