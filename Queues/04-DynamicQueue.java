@@ -60,6 +60,7 @@ public class CircularQueue
 
 //DynamicQueue.java -> MAIN code
 public class DynamicQueue extends CircularQueue{
+	@Override
     if(isFull()){
         //to double the size of array
         //temporary array
