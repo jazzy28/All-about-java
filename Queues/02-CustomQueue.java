@@ -1,3 +1,4 @@
+//As we are deleting from front, and front pointer is at a single palce.. then there is no need to create front
 import java.util.*;
 
 public class CustomQueue
