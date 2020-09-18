@@ -11,7 +11,7 @@ public class CircularQueue
 	   
 	   CircularQueue(){
 	       data = new int[DEFAULT_SIZE];
-	       front = -1;
+	       front = 0;
 	       end = -1;
 	       size = 0; //new queue
 	   }
@@ -50,7 +50,7 @@ public class CircularQueue
 	       }
 	       //storing before the front gets removed
 	       int temp = data[front];
-	       this.front = (front + 1)% data.length;
+	       this.front = (front+1)% data.length;
 	       size--;
 	       return temp;
 	   }
