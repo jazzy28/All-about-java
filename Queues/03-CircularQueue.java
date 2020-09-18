@@ -1,6 +1,6 @@
 import java.util.*;
 
-//CustomQueue.java
+//CircularQueue.java
 public class CircularQueue
 {
 	public static void main(String[] args) {
@@ -57,3 +57,21 @@ public class CircularQueue
 	    
 	}
 }
+
+//QueueClient.java
+public class QueueClient
+{
+	public static void main(String[] args) {
+	    CircularQueue queue = new CircularQueue(); //LinkedList class implementes Queue interface
+	    queue.add(1);
+	    queue.add(2);
+	    queue.add(3);
+	    queue.add(4);
+	    
+	    //an element is returned when removed
+	    System.out.println(queue.remove());//1
+	    
+		
+	}
+}
+
