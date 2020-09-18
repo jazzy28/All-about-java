@@ -52,3 +52,20 @@ public class CustomQueue
 	    
 	}
 }
+
+//QueueClient.java
+public class QueueClient
+{
+	public static void main(String[] args) {
+	    CustomQueue queue = new CustomQueue(); 
+	    queue.add(1);
+	    queue.add(2);
+	    queue.add(3);
+	    queue.add(4);
+	    
+	    System.out.println(queue.remove());//1
+	    System.out.println(queue.remove());//2
+	    
+		
+	}
+}
