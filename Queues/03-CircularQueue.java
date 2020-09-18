@@ -48,7 +48,7 @@ public class CircularQueue
 	           System.out.println("Queue is empty");
 	           return null;
 	       }
-	       //storing before the front gets changed
+	       //storing before the front gets removed
 	       int temp = data[front];
 	       this.front = (front + 1)% data.length;
 	       size--;
