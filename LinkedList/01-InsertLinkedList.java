@@ -1,5 +1,8 @@
 //CustomLinkedList.java
 
+//without tail, insertion at end would have time complexity: O(n)
+//now complexity is O(1) to add at the end
+
 public class CustomLinkedList
 {
     Node head, tail; //start and end point
@@ -39,14 +42,32 @@ public class CustomLinkedList
 	    tail = node; //tail points to the new node
 	    size++;
 	}
+	
+	//to display the LinkedList
+	public void display(){
+	    Node temp = head;//temporary Node
+	    while(temp != null){
+	        System.out.print(temp.value + " ");
+	        temp = temp.next;
+	    }
+	    System.out.println();
+	}
 
 }
 
 //LinkedListClient.java
 public class LinkedListClient{
 	public static void main(String[] args) {
-
-		System.out.println("Hello World");
+	    CustomLinkedList list = new CustomLinkedList();
+	    list.insertAtFirst(2);
+	    list.insertAtFirst(5); //5 will come before 2
+		list.display(); //5 2
+		list.insertAtLast(3);
+		list.insertAtLast(8);
+		list.display(); //5 2 3 8
 	}
 }
+
+/*o/p: 5 2 
+       5 2 3 8*/
 
