@@ -102,7 +102,8 @@ public class LinkedListClient{
 		list.insertAtLast(8); //3 8
 		list.display(); //5 2 3 8
 		list.deleteAtLast();
-		System.out.println(list.mid());
+		System.out.println("Mid: " + list.mid());
 		list.display(); //5 2 3
 	}
 }
+
