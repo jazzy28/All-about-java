@@ -103,8 +103,8 @@ public class CustomLinkedList
 	    }
 	    System.out.println();
 	    //checking for a cycle
-	    insertAtLast(4);
-	    tail.next = head;
+	    //insertAtLast(4);
+	    //tail.next = head;
 	}
 
 }
